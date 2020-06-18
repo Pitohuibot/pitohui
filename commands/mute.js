@@ -4,9 +4,9 @@ const ms = require("ms");
 module.exports.run = async (bot, message, args) => {
 
       let member = message.mentions.members.first() || message.guild.members.get(args[0]);
-  let reason = args.slice(2).join(' ');
-    if(!reason) reason = "Nenhuma razão fornecida";
-  message.delete().catch(O_o=>{})
+  let reason = args.slice(2).join(' ')
+   
+
 
   //!tempmute @user 1s/m/h/d
 
