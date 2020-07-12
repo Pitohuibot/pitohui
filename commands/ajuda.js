@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("p.kick", `Expulsar alguém do servidor`)
         .addField("p.ping", `Ver o ping do bot`)
         .addField("p.sayemb", `Faça o bot enviar uma mensagem em formato de embed`)
-        .addField("p.mute", `Silenciar um usuário no canal de texto`)
+        .addField("p.mute", `Silenciar um usuário no canal de texto em D(Dias), M(Minutos), H(Horas)`)
         .addField("p.unmute", `Desmutar um usuário no canal de texto`)
         .addField("p.invite", `Link do meu servidor de suporte!`)
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
