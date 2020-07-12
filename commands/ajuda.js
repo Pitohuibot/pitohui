@@ -7,7 +7,6 @@ module.exports.run = async (bot, message, args) => {
     let pEmbed = new Discord.RichEmbed()
         .setTitle("Comandos")
         .addField("p.ban", `Banir um usuário`)
-        .addField("p.clear", `Limpar o chat (Comando em desenvolvimento)`)
         .addField("p.kick", `Expulsar alguém do servidor`)
         .addField("p.ping", `Ver o ping do bot`)
         .addField("p.sayemb", `Faça o bot enviar uma mensagem em formato de embed`)
