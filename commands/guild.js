@@ -1,6 +1,9 @@
 
 module.exports.run = async (client, message, args) => {
-    if(!message.member.hasID('335193454034419715')) return message.reply("nope")
+    
+        var users = ['335193454034419715']
+if(!users.includes(message.author.id)) return message.reply("nope")
+    
     const guildArray = client.guilds.map((guild) => {
     return `Nome: ${guild.name}\nID: ${guild.id}\nPessoas: ${guild.memberCount}\n\n`
     })
