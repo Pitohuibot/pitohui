@@ -1,7 +1,7 @@
 {
   "name": "pitohui",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.1",
+  "description": "A Discord simple moderation bot",
   "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.5.1",
