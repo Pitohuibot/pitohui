@@ -6,6 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if(!member) return message.channel.send(` ${message.author} Mencione o usuário que deseja desmutar!`);
      else{
      member.removeRole(muteRole);
+     if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("Você não é um ademir.");
        let pEmbed = new Discord.RichEmbed()
        .setTitle("🔊UnMute")
        .addField("Membro Desmutado", `${member}`)
