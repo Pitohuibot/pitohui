@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports.run = async (client, message, args) => {
-    if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("Você não tem **permissão** suficiente !")
+    if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply("Você não tem **permissão** suficiente !")
     let member = message.mentions.members.first()
     if(!member)
       return message.reply("Por favor, mencione um usuário válido !")
