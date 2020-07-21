@@ -13,11 +13,11 @@ module.exports.run = async (bot, message, args) => {
         .addField("p.mute", `Mute an user in a text channel in D(Days), M(Minutes), H(Hours)`) 
         .addField("p.unmute", `Unmute an user in a text channel`)
         .addField("p.invite", `Link to my support serverᵇʳ`)
+        .addField("p.userinfo", `information about a member`)
+        .addField("p.serverinfo", `information about the server`)
+        .addField("p.avatar", `get's an user avatar image/gif`)
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
         .setColor("RANDOM")
 
         message.channel.send(pEmbed)
-}
-module.exports.help = {
-    name: "help"
 }
