@@ -13,6 +13,9 @@ module.exports.run = async (bot, message, args) => {
         .addField("p.mute", `Silenciar um usuário no canal de texto em D(Dias), M(Minutos), H(Horas)`)
         .addField("p.unmute", `Desmutar um usuário no canal de texto`)
         .addField("p.invite", `Link do meu servidor de suporte!`)
+        .addField("p.userinfo", `Mostra as informações de algum usuário`)
+        .addField("p.serverinfo", `Mostra as informações do servidor`)
+        .addField("p.avatar", `Mostra o avatar de algum usuário`)
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
         .setColor("RANDOM")
 
