@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL)
         .setColor("RED")
 
-        message.channel.send(pEmbed)
+        message.channel.send(`${message.author}`, pEmbed)
 }
 
 module.exports.help = {
